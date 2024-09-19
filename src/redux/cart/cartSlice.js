@@ -16,9 +16,15 @@ export const productSlice = createSlice({
     setIsClose: (state) => {
       state.sideState = false;
     },
+    setCartOpen:(state)=>{
+      state.cartState = true
+    },
+    setCartClose:(state)=>{
+      state.cartState = false
+    }
   },
 });
 
-export const { setIsOpen, setIsClose } = productSlice.actions;
+export const { setIsOpen, setIsClose, setCartOpen, setCartClose } = productSlice.actions;
 
 export default productSlice.reducer;
