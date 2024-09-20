@@ -12,7 +12,7 @@ export default function SideBar() {
          console.log(product);
          
   return (
-    <div className={`fixed top-0 left-0 h-screen bg-white z-20 w-[300px] shadow-lg ${!product ? "hidden" :"fixed top-0 transform translate-x transition-all -left-0 h-screen bg-white z-20 w-[300px] shadow-lg duration-300"}`}>
+    <div className={`fixed top-0 left-0 h-screen bg-white z-100 w-[300px] shadow-lg ${!product ? "hidden" :"fixed top-0 transform translate-x transition-all -left-0 h-screen bg-white z-20 w-[300px] shadow-lg duration-300"}`}>
              <div className="border-b flex justify-between items-center p-3">
              <div className="flex justify-center items-center">
               <h1 className='text-red-600 text-sm lg:text-2xl font-semibold'>YUMMY</h1>

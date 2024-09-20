@@ -10,7 +10,7 @@ export default function Header() {
     const product = useSelector((state)=>state.product.sideState)
    
   return (
-    <div className='bg-white shadow sticky top-0 px-2'>
+    <div className='bg-white shadow sticky top-0 px-2 z-10'>
         <div className="w-full max-w-6xl mx-auto p-3 flex justify-between items-center">
             <div className="flex justify-center items-center gap-2">
             <FiAlignCenter onClick={()=>dispatch(setIsOpen())} className='text-4xl font-semibold active:scale-105 cursor-pointer'/>
