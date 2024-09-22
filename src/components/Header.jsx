@@ -8,6 +8,9 @@ import { setCartOpen, setIsOpen } from '../redux/cart/cartSlice'
 export default function Header() {
     const dispatch =useDispatch()
     const product = useSelector((state)=>state.product.sideState)
+    const addProduct =useSelector((state)=>state.product.cartProduct)
+           
+           
    
   return (
     <div className='bg-white shadow sticky top-0 px-2 z-10'>
@@ -24,9 +27,13 @@ export default function Header() {
             <div className=" flex  w-auto justify-center border p-2 rounded-lg">
                 <input type="text" className='w-24 sm:w-64 focus:outline-none bg-transparent placeholder:text-gray' placeholder='Search meal..' />
             </div>
-            <div  className=" relative active:scale-105 cursor-pointer">
-            <GiShoppingCart onClick={()=>dispatch(setCartOpen())} className=' text-5xl text-black font-semibold'/>
-              <span className='w-5 h-5 bg-red-700 flex items-center justify-center rounded-full text-white absolute top-0 right-0'>0</span>
+            <div onClick={()=>dispatch(setCartOpen())}  className="  relative active:scale-105 cursor-pointer">
+            <GiShoppingCart  className=' text-5xl text-black font-semibold'/>
+              <span className='w-5 h-5 bg-red-700 flex items-center justify-center rounded-full text-white absolute top-0 right-0'>
+                 {
+                  addProduct.length > 0 ? addProduct.length : 0
+                 }
+                </span>
             </div>
         </div>
     </div>
