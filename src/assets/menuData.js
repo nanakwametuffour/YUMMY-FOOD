@@ -8,138 +8,142 @@ import dish7 from "../assets/dish7.jpeg";
 import dish8 from "../assets/dish8.jpeg";
 import dish9 from "../assets/dish9.jpeg";
 import dish10 from "../assets/dish10.jpeg";
-import pizza2 from '../assets/pizza2.jpg'
-import pizza3 from '../assets/pizza3.jpg'
-import pizza4 from '../assets/pizza4.jpg'
-import pizza5 from '../assets/pizza5.jpg'
-import pizza6 from '../assets/pizza6.jpg'
-import pizza7 from '../assets/pizza7.jpg'
-import pizza8 from '../assets/pizza8.jpg'
-import pizza9 from '../assets/pizza9.jpg'
-import pizza10 from '../assets/pizza10.jpg'
-import pizza11 from '../assets/pizza11.jpg'
-import pizza12 from '../assets/pizza12.jpg'
-import pizza13 from '../assets/pizza13.jpg'
-import pizza14 from '../assets/pizza14.jpg'
-import pizza15 from '../assets/pizza15.jpg'
-import pizza16 from '../assets/pizza16.jpg'
-import pizza17 from '../assets/pizza17.jpg'
-import pizza18 from '../assets/pizza18.jpg'
-import pizza19 from '../assets/pizza19.jpg'
-import pizza20 from '../assets/pizza20.jpg'
+import pizza2 from "../assets/pizza2.jpg";
+import pizza3 from "../assets/pizza3.jpg";
+import pizza4 from "../assets/pizza4.jpg";
+import pizza5 from "../assets/pizza5.jpg";
+import pizza6 from "../assets/pizza6.jpg";
+import pizza7 from "../assets/pizza7.jpg";
+import pizza8 from "../assets/pizza8.jpg";
+import pizza9 from "../assets/pizza9.jpg";
+import pizza10 from "../assets/pizza10.jpg";
+import pizza11 from "../assets/pizza11.jpg";
+import pizza12 from "../assets/pizza12.jpg";
+import pizza13 from "../assets/pizza13.jpg";
+import pizza14 from "../assets/pizza14.jpg";
+import pizza15 from "../assets/pizza15.jpg";
+import pizza16 from "../assets/pizza16.jpg";
+import pizza17 from "../assets/pizza17.jpg";
+import pizza18 from "../assets/pizza18.jpg";
+import pizza19 from "../assets/pizza19.jpg";
+import pizza20 from "../assets/pizza20.jpg";
+import coke from "../assets/coke1.jpeg";
+ import diet_coke from "../assets/diet coke.jpeg";
+// import drpepper from "../assets/drpepper.jpeg";
+ import fanta from "../assets/fanta.jpeg";
+// import hic from "../assets/hic.jpeg";
+ import ice from "../assets/ice tea.jpeg";
 
+export const topSlider = [
+  {
+    image: dish1,
+    title: "Spaghetti",
+    description: "Creamy pasta with bacon and cheese",
+  },
+  {
+    image: dish2,
+    title: " Tikka Masala",
+    description: "Indian curry with tender chicken in spicy sauce",
+  },
+  {
+    image: dish3,
+    title: "Caprese Salad",
+    description: "Fresh tomatoes, mozzarella, and basil with balsamic glaze",
+  },
+  {
+    image: dish4,
+    title: "Sushi Roll",
+    description: "Assorted seafood and vegetables wrapped in seaweed and rice",
+  },
+  {
+    image: dish5,
+    title: " Lava Cake",
+    description: "Decadent chocolate cake with a gooey center",
+  },
+  {
+    image: dish6,
+    title: "Greek Salad",
+    description: "Crisp lettuce, olives, feta cheese, and tangy dressing",
+  },
+  {
+    image: dish7,
+    title: "Pad Thai",
+    description: "Stir-fried rice noodles with shrimp, tofu, and peanuts",
+  },
+  {
+    image: dish8,
+    title: "Peking Duck",
+    description: "Crispy duck with pancakes, cucumber, and hoisin sauce",
+  },
+  {
+    image: dish9,
+    title: "Beef ",
+    description: "Tender beef filet wrapped in pastry with mushrooms and herbs",
+  },
+  {
+    image: dish10,
+    title: "Tiramisu",
+    description:
+      "Italian dessert with layers of coffee-soaked biscuits and mascarpone",
+  },
+];
 
-export const topSlider=[
-    {
-        image: dish1,
-        title: "Spaghetti",
-        description: "Creamy pasta with bacon and cheese",
-      },
-      {
-        image: dish2,
-        title: " Tikka Masala",
-        description: "Indian curry with tender chicken in spicy sauce",
-      },
-      {
-        image: dish3,
-        title: "Caprese Salad",
-        description: "Fresh tomatoes, mozzarella, and basil with balsamic glaze",
-      },
-      {
-        image: dish4,
-        title: "Sushi Roll",
-        description: "Assorted seafood and vegetables wrapped in seaweed and rice",
-      },
-      {
-        image: dish5,
-        title: " Lava Cake",
-        description: "Decadent chocolate cake with a gooey center",
-      },
-      {
-        image: dish6,
-        title: "Greek Salad",
-        description: "Crisp lettuce, olives, feta cheese, and tangy dressing",
-      },
-      {
-        image: dish7,
-        title: "Pad Thai",
-        description: "Stir-fried rice noodles with shrimp, tofu, and peanuts",
-      },
-      {
-        image: dish8,
-        title: "Peking Duck",
-        description: "Crispy duck with pancakes, cucumber, and hoisin sauce",
-      },
-      {
-        image: dish9,
-        title: "Beef ",
-        description: "Tender beef filet wrapped in pastry with mushrooms and herbs",
-      },
-      {
-        image: dish10,
-        title: "Tiramisu",
-        description:
-          "Italian dessert with layers of coffee-soaked biscuits and mascarpone",
-      },
-]
-
-
-export const banner =[
+export const banner = [
   {
     id: 1,
     image: pizza2,
     name: "crisibreezi",
-    des: "beef, chicken breast, brisket, mortadella, ham,pepperoni"
+    des: "beef, chicken breast, brisket, mortadella, ham,pepperoni",
   },
   {
     id: 2,
     image: pizza3,
     name: "gretaben",
-    des: "beef,chicken,pepperoni"
+    des: "beef,chicken,pepperoni",
   },
   {
     id: 3,
     image: pizza4,
     name: "kersame",
-    des: "beef,chicken"
+    des: "beef,chicken",
   },
   {
     id: 4,
     image: pizza5,
     name: "peppa babe",
-    des: "beef, pepperoni"
+    des: "beef, pepperoni",
   },
   {
     id: 5,
     image: pizza6,
     name: "dukeman",
-    des: "beef, chicken, mushroom, tuna"
+    des: "beef, chicken, mushroom, tuna",
   },
   {
     id: 6,
     image: pizza7,
     name: "panchito",
-    des: "chicken, pepperoni"
+    des: "chicken, pepperoni",
   },
   {
     id: 7,
     image: pizza8,
     name: "hawaiian",
-    des: "ham, pineapple"
+    des: "ham, pineapple",
   },
   {
     id: 8,
     image: pizza9,
     name: "margherita",
-    des: "tomato sauce, cheese"
+    des: "tomato sauce, cheese",
   },
   {
     id: 9,
     image: pizza10,
     name: "obiridan",
-    des: "beef, tuna, barbecue sauce"
-  }
-]
+    des: "beef, tuna, barbecue sauce",
+  },
+];
 
 export const heroMenu = [
   {
@@ -260,15 +264,15 @@ export const heroMenu = [
   //   rating: 4.2,
   // },
 
-   {
+  {
     id: 14,
     img: pizza6,
-     name: "Grilled Chicken Burrito Bowl",
+    name: "Grilled Chicken Burrito Bowl",
     price: 160,
-     desc: "Savor the flavors of a delicious burrito bowl with tender grilled chicken, black beans, rice, sautéed peppers and onions, shredded cheese, and a drizzle of zesty cilantro-lime dressing. A hearty and satisfying chicken dinner option.",
+    desc: "Savor the flavors of a delicious burrito bowl with tender grilled chicken, black beans, rice, sautéed peppers and onions, shredded cheese, and a drizzle of zesty cilantro-lime dressing. A hearty and satisfying chicken dinner option.",
     category: "Dinner",
-     rating: 4.6,
-   },
+    rating: 4.6,
+  },
 
   // {
   //   id: 15,
@@ -324,7 +328,39 @@ export const heroMenu = [
   //   category: "Snacks",
   //   rating: 4.8,
   // },
-]
+];
 
+export const beverage = [
+  {
+    id: 1,
+    img: coke,
+    name: "coke",
+  },
+   {
+     id: 2,
+     img: diet_coke,
+     name: "diet ",
+   },
+   {
+     id: 3,
+    img: fanta,
+     name: "fanta",
+   },
+  // {
+  //   id: 4,
+  //   img: hic,
+  //   name: "Hic",
+  // },
+  // {
+  //   id: 5,
+  //   img: drpepper,
+  //   name: "drpepper",
+  // },
+   {
+     id: 6,
+     img: ice,
+    name: "ice tea",
+   },
+];
 
-export default {topSlider, banner, heroMenu}
+export default { topSlider, banner, heroMenu, beverage };

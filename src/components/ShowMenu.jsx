@@ -23,23 +23,23 @@ export default function ShowMenu() {
     },
   };
   return (
-    <div className="px-2 md:px-6 lg:px-10 w-full h-auto">
+    <div className="px-2 md:px-6 lg:px-10 w-full h-auto ">
           <Carousel
            responsive={responsive}
            infinite={true}
            autoPlay={false}
            draggable={true}
            centerMode={true}
-           arrows={true}
+           arrows={false}
            transitionDuration={1000}
           >
              {
                 meal?.map((item)=>(
-                    <div className="w-full px-2 h-auto">
+                    <div className="w-full px-2 h-auto ">
                         <div className="w-full relative rounded-lg overflow-hidden h-full">
                             <img src={item.image} alt={item.name} className="w-full h-[200px] object-cover"/>
                             <div className="w-full h-full top-0 right-0 left-0 bottom-0 bg-black/60 absolute flex flex-col items-center justify-center">
-                               <h1 className="text-2xl text-orange-400 font-semibold animate-pulse">{item.name}</h1>
+                               <h1 className="text-base lg:text-2xl text-orange-400 font-semibold animate-pulse flex px-2 justify-center items-center p-3 whitespace-nowrap">{item.name}</h1>
                             </div>
                         </div>
                     </div>

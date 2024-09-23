@@ -6,6 +6,7 @@ import DownloadApp from '../components/DownloadApp'
 import HeroMenu from '../components/HeroMenu'
 import Trending from '../components/Trending'
 import ShowMenu from '../components/ShowMenu'
+import Beverages from '../components/Beverages'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
        <DownloadApp/>
        <Trending/>
        <ShowMenu/>
+        <Beverages/>
     </div>
   )
 }
