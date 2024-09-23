@@ -12,8 +12,8 @@ export default function HeroMenu() {
   return (
     <div className="py-10 ">
       <div className="flex justify-center py-2">
-        <h1 className=" border-b-2 border-orange-400 text-2xl font-semibold">
-          people,s favorate
+        <h1 className=" border-b-2 border-orange-400 text-2xl uppercase text-orange-400 font-semibold">
+          people,s favorite
         </h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 p-3 lg:p-10 w-full gap-5">

@@ -78,64 +78,67 @@ export const DISHES = [
   },
 ];
 
-export const ABOUT = {
-  header: "We love cooking!",
-  content:
-    "At Restaura, we believe that great food goes beyond taste; it tells a story of dedication and creativity. From our chef's signature creations to our attentive service, every detail is curated to ensure your visit is nothing short of exceptional. Whether you're savoring our renowned Tikka Kebab or exploring our diverse menu inspired by global flavors, each dish is a celebration of flavor and innovation. Join us for a culinary journey where every bite leaves a lasting impression. Experience Restaura—where every meal is a masterpiece.",
-};
+// export const ABOUT = {
+//   header: "We love cooking!",
+//   content:
+//     "At Restaura, we believe that great food goes beyond taste; it tells a story of dedication and creativity. From our chef's signature creations to our attentive service, every detail is curated to ensure your visit is nothing short of exceptional. Whether you're savoring our renowned Tikka Kebab or exploring our diverse menu inspired by global flavors, each dish is a celebration of flavor and innovation. Join us for a culinary journey where every bite leaves a lasting impression. Experience Restaura—where every meal is a masterpiece.",
+// };
 
-export const MISSION =
-  "At our restaurant, our mission is to create delicious and memorable dining experiences.";
+// export const MISSION =
+//   "At our restaurant, our mission is to create delicious and memorable dining experiences.";
 
-export const CUSINES = [
-  {
-    number: "01.",
-    image: italian,
-    title: "Italian",
-    description:
-      "Experience the flavors of Italy with our exquisite Italian cuisine, featuring traditional recipes and contemporary dishes.",
-  },
-  {
-    number: "02.",
-    image: japanese,
-    title: "Japanese",
-    description:
-      "Delight in the art of Japanese culinary excellence, offering a fusion of classic and modern flavors.",
-  },
-  {
-    number: "03.",
-    image: indian,
-    title: "Indian",
-    description:
-      "Indulge in the rich and diverse tastes of India, with a menu that celebrates the country's culinary heritage.",
-  },
-];
+// export const CUSINES = [
+//   {
+//     number: "01.",
+//     image: italian,
+//     title: "Italian",
+//     description:
+//       "Experience the flavors of Italy with our exquisite Italian cuisine, featuring traditional recipes and contemporary dishes.",
+//   },
+//   {
+//     number: "02.",
+//     image: japanese,
+//     title: "Japanese",
+//     description:
+//       "Delight in the art of Japanese culinary excellence, offering a fusion of classic and modern flavors.",
+//   },
+//   {
+//     number: "03.",
+//     image: indian,
+//     title: "Indian",
+//     description:
+//       "Indulge in the rich and diverse tastes of India, with a menu that celebrates the country's culinary heritage.",
+//   },
+// ];
 
-export const REVIEW = {
-  name: "Xaviour Fernando",
-  profession: "Food Critic",
-  content:
-    "“As a seasoned food critic, my expectations are always high when stepping into a new dining establishment. Restaura, with its unassuming exterior and elegantly designed interior, promised a unique culinary experience from the moment I walked in. And I must say, it delivered beyond my expectations.”",
-};
+// export const REVIEW = {
+//   name: "Xaviour Fernando",
+//   profession: "Food Critic",
+//   content:
+//     "“As a seasoned food critic, my expectations are always high when stepping into a new dining establishment. Restaura, with its unassuming exterior and elegantly designed interior, promised a unique culinary experience from the moment I walked in. And I must say, it delivered beyond my expectations.”",
+// };
 
-export const CONTACT = [
-  { key: "address", value: "Address: 123 Main Street, Paris, France, 345678" },
-  { key: "phone", value: "Phone: 123-456-7890" },
-  { key: "email", value: "Email: contact@restaurant.com" },
-];
+// export const CONTACT = [
+//   { key: "address", value: "Address: 123 Main Street, Paris, France, 345678" },
+//   { key: "phone", value: "Phone: 123-456-7890" },
+//   { key: "email", value: "Email: contact@restaurant.com" },
+// ];
 
-export const SOCIAL_MEDIA_LINKS = [
-  {
-    href: "https://x.com/",
-    icon: <FaFacebook fontSize={30} className="hover:opacity-80" />,
-  },
+// export const SOCIAL_MEDIA_LINKS = [
+//   {
+//     href: "https://x.com/",
+//     icon: <FaFacebook fontSize={30} className="hover:opacity-80" />,
+//   },
 
-  {
-    href: "https://x.com/",
-    icon: <FaInstagram fontSize={30} className="hover:opacity-80" />,
-  },
-  {
-    href: "https://x.com/",
-    icon: <FaXTwitter fontSize={30} className="hover:opacity-80" />,
-  },
-];
+//   {
+//     href: "https://x.com/",
+//     icon: <FaInstagram fontSize={30} className="hover:opacity-80" />,
+//   },
+//   {
+//     href: "https://x.com/",
+//     icon: <FaXTwitter fontSize={30} className="hover:opacity-80" />,
+//   },
+// ];
+
+
+export default DISHES;

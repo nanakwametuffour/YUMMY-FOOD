@@ -25,7 +25,7 @@ export default function Cart() {
       className={`fixed top-0 right-0 h-screen bg-white z-100 w-[350px] shadow-lg ${
         !product
           ? "hidden"
-          : "fixed top-0 transform translate-x transition-all -right-0 h-screen bg-white z-20 w-[300px] shadow-lg duration-300"
+          : "fixed top-0 transform translate-x transition-all  -right-0 h-screen bg-white z-20 w-[300px] shadow-lg duration-300"
       }`}
     >
       <div className=" p-3 flex flex-col w-full h-auto gap-4">
@@ -55,17 +55,17 @@ export default function Cart() {
         </div>
 
         {addProduct.length > 0 ? (
-          <div className="flex flex-col items-start justify-start overflow-y-scroll overflow-x-hidden scroll-smooth h-[81vh]">
+          <div className="flex flex-col justify-start items-start overflow-y-scroll px-2 gap-3 overflow-x-hidden scroll-smooth h-[81vh]">
             {addProduct?.map((item) => (
-              <div className="flex justify-between w-full px-2 border-b gap-5  p-2 mb-2">
+              <div className="flex justify-between  w-full border-b gap-2 mb-2 py-2">
                 <div className="w-full h-full">
                   <img
                     src={item.img}
                     alt=""
-                    className=" object-cover w-full lg:w-full h-[100%] rounded-lg hover:scale-110 transition-all duration-300"
+                    className="w-full h-full object-cover  rounded-lg hover:scale-110 transition-all duration-300"
                   />
                 </div>
-                <div className="flex flex-col w-full">
+                <div className="flex justify-center w-full flex-col full">
                   <h6 className="text-sm font-semibold">{item.name}</h6>
                   <p className="text-sm text-gray-500">
                     {truncate(item.desc, { length: 30 })}
@@ -73,7 +73,7 @@ export default function Cart() {
                   <span className="font-semibold">
                     unit price: ${item.price}
                   </span>
-                  <div className="flex items-center  w-full gap-2  px-1">
+                  <div className="flex items-center gap-2 ">
                     <span className="font-medium">quantity: </span>
                     <button onClick={()=>dispatch(decrementItem(item.id))} className="bg-orange-500 flex items-center justify-center w-5 h-5  text-white active:scale-105 rounded-lg ">
                       <FaMinus />
@@ -84,13 +84,13 @@ export default function Cart() {
                     </button>
                   </div>
                 </div>
-                <div className="flex flex-col gap-2 px-1">
+                <div className="flex flex-col gap-2 p-3 px-3 w-12 ">
                   <h3 className="font-semibold">
                     ${item.price * item.quantity}
                   </h3>
                   <FaTrash
                     onClick={() => dispatch(dealetItem(item.id))}
-                    className="text-orange-400 cursor-pointer text-2xl"
+                    className="text-orange-400 cursor-pointer"
                   />
                 </div>
               </div>

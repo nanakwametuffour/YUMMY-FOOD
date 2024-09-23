@@ -4,6 +4,8 @@ import Banner from '../components/Banner'
 import DownloadApp from '../components/DownloadApp'
 
 import HeroMenu from '../components/HeroMenu'
+import Trending from '../components/Trending'
+import ShowMenu from '../components/ShowMenu'
 
 export default function Home() {
   return (
@@ -12,6 +14,8 @@ export default function Home() {
        <Banner/>
        <HeroMenu/>
        <DownloadApp/>
+       <Trending/>
+       <ShowMenu/>
     </div>
   )
 }
