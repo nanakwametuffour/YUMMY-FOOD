@@ -33,43 +33,43 @@ export default function SideBar() {
                  <FaTimes onClick={()=>dispatch(setIsClose())} className='text-red-700 font-semibold active:scale-110 '/>
                </div>
              </div>
-             <div className="w-full gap-1 flex flex-col py-3 justify-center">
+             <div className="w-full gap-5 lg:gap-1 flex flex-col py-7 lg:py-3 justify-center">
                
                <div className="w-full flex justify-center hover:bg-orange-400 py-1 transition-all duration-300 text-2xl px-2">
                  <Link to={'/menu'} className='flex gap-3 items-center'>
-                 <GrRestaurant/>
+                 <GrRestaurant className=""/>
 
-                    <h2>Menu</h2>
+                    <h2 className="px-2 font-semibold w-30 text-base">Menu</h2>
                  </Link>
                </div>
                <div className="w-full flex justify-center hover:bg-orange-400 py-1 transition-all duration-300 text-2xl px-2">
                 <Link to={'/burger'} className='flex items-center gap-3'>
-               <PiHamburgerLight/>
-               <h2>Burger</h2>
+               <PiHamburgerLight className=""/>
+               <h2 className="px-2 font-semibold w-30 text-base">Burger</h2>
                 </Link>
                </div>
                <div className="w-full flex justify-center hover:bg-orange-400 py-1 transition-all duration-300 text-2xl px-2">
                <Link to={'/chicken'} className='flex items-center gap-3 pl-2'>
-               <GiChickenOven/>
-                <h2>Chicken</h2>
+               <GiChickenOven className=""/>
+                <h2 className="px-2 font-semibold w-30 text-base">Chicken</h2>
                </Link>
                </div>
                <div className="w-full flex justify-center hover:bg-orange-400 py-1 transition-all duration-300 text-2xl px-2">
                <Link to={'/pizza'} className='flex items-center gap-3 pr-3'>
-               <PiPizzaLight/>
-                <h2>Pizza</h2>
+               <PiPizzaLight className=""/>
+                <h2 className="px-2 font-semibold w-30 text-base">Pizza</h2>
                </Link>
                </div>
                <div className="w-full flex justify-center hover:bg-orange-400 py-1 transition-all duration-300 text-2xl px-2">
                <Link to={'/steak'} className='flex items-center gap-3 pr-1'>
-               <GiSteak/>
-                <h2>Steak</h2>
+               <GiSteak className=""/>
+                <h2 className="px-2 font-semibold w-30 text-base">Steak</h2>
                </Link>
                </div>
                <div className="w-full flex justify-center hover:bg-orange-400 py-1 transition-all duration-300 text-2xl px-2">
                <Link to={'/cake'} className='flex items-center gap-3 pr-1'>
-               <BsCake2/>
-                  <h2>Cake</h2>
+               <BsCake2 className=""/>
+                  <h2 className="px-2 font-semibold w-30 text-base">Cake</h2>
                </Link>
 
                </div>

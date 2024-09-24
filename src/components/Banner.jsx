@@ -52,7 +52,7 @@ export default function Banner() {
                <div className=" absolute w-full h-full bg-black/60 flex flex-col justify-center items-center">
                 <h1 className="text-white text-3xl capitalize animate-bounce">{item.name}</h1>
                  <p className="text-yellow-50 text-2xl font-semibold capitalize animate-pulse px-5">{item.des}</p>
-                <Link className="py-3">
+                <Link to={'/ordering'} className="py-3">
                  <button className="bg-orange-400 px-2 py-1 rounded-lg text-yellow-50 shadow-lg shadow-orange-200 active:scale-110  ">Order Now</button>
                  </Link>
                </div>

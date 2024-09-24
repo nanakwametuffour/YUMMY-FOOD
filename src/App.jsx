@@ -9,6 +9,7 @@ import Steak from "./pages/Steak";
 import Sandwich from "./pages/Sandwich";
 import Chicken from "./pages/Chicken";
 import Cake from "./pages/Cake";
+import Ordering from "./pages/Ordering";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
             <Route path="/sandwich" element={<Sandwich />} />
             <Route path="/chicken" element={<Chicken />} />
             <Route path="/cake" element={<Cake />} />
+            <Route path="/ordering" element={<Ordering/>}/>
           </Route>
         </Routes>
       </BrowserRouter>
