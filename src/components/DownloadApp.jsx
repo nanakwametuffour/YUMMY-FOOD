@@ -6,7 +6,7 @@ export default function DownloadApp() {
   return (
     <div className="w-full h-auto flex flex-col justify-center items-center">
       <div className="text-center">
-        <h1 className="text-2xl font-semibold text-orange-400">
+        <h1 className="text-2xl font-semibold text-orange-400 border-b-2 border-orange-400 uppercase">
          
           Quick Delivery App
         </h1>
