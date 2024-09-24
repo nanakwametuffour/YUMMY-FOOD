@@ -33,6 +33,7 @@ export default function ShowMenu() {
            centerMode={true}
            arrows={false}
            transitionDuration={1000}
+           autoPlaySpeed={5000}
           >
              {
                 meal?.map((item)=>(
