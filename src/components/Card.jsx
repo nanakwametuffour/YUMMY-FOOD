@@ -1,8 +1,10 @@
 import React from 'react'
 import { IoBagOutline } from 'react-icons/io5';
-
+import { useDispatch } from 'react-redux';
+import { addToCart } from '../redux/cart/cartSlice';
+ 
 export default function Card({item}) {
-    console.log(item);
+    const dispatch = useDispatch()
     
   return (
     <div>
@@ -13,8 +15,8 @@ export default function Card({item}) {
                   <span className='font-medium'>{item.price}</span>
             </div>
              <div className="w-full p-2 text-2xl">
-                <button className='bg-orange-400 gap-2 flex w-full justify-center items-center py-2 rounded-lg active:scale-110 transition-all duration-300'>
-                    <h6>Add To Cart</h6>
+                <button  className='bg-orange-400 gap-2 flex w-full justify-center items-center py-2 rounded-lg active:scale-110 transition-all duration-300'>
+                    <h6>Order now</h6>
                     <IoBagOutline/>
 
                 </button>
