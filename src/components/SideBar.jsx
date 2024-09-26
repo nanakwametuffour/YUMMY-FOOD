@@ -36,62 +36,77 @@ export default function SideBar() {
              <div className="w-full gap-5 lg:gap-1 flex flex-col py-7 lg:py-3 justify-center">
                
                <div className="w-full flex justify-center hover:bg-orange-400 py-1 transition-all duration-300 text-2xl px-2">
-                 <Link to={'/menu'} className='flex gap-3 items-center'>
+                 <Link onClick={()=>dispatch(setIsClose())} to={'/menu'} className='flex items-center'>
                  <GrRestaurant className=""/>
 
-                    <h2 className="px-2 font-semibold w-30 text-base">Menu</h2>
+                    <h2 className="px-2  w-30 text-base">Menu</h2>
                  </Link>
                </div>
                <div className="w-full flex justify-center hover:bg-orange-400 py-1 transition-all duration-300 text-2xl px-2">
-                <Link to={'/burger'} className='flex items-center gap-3'>
+                <Link onClick={()=>dispatch(setIsClose())} to={'/burger'} className='flex items-center'>
                <PiHamburgerLight className=""/>
-               <h2 className="px-2 font-semibold w-30 text-base">Burger</h2>
+               <h2 className="px-2  w-30 text-base">Burger</h2>
                 </Link>
                </div>
                <div className="w-full flex justify-center hover:bg-orange-400 py-1 transition-all duration-300 text-2xl px-2">
-               <Link to={'/chicken'} className='flex items-center gap-3 pl-2'>
+               <Link onClick={()=>dispatch(setIsClose())} to={'/chicken'} className='flex items-center  pl-2'>
                <GiChickenOven className=""/>
-                <h2 className="px-2 font-semibold w-30 text-base">Chicken</h2>
+                <h2 className="px-2  w-30 text-base">Chicken</h2>
                </Link>
                </div>
                <div className="w-full flex justify-center hover:bg-orange-400 py-1 transition-all duration-300 text-2xl px-2">
-               <Link to={'/pizza'} className='flex items-center gap-3 pr-3'>
+               <Link onClick={()=>dispatch(setIsClose())} to={'/pizza'} className='flex items-center pr-1'>
                <PiPizzaLight className=""/>
-                <h2 className="px-2 font-semibold w-30 text-base">Pizza</h2>
+                <h2 className="px-2  w-30 text-base">Pizza</h2>
                </Link>
                </div>
                <div className="w-full flex justify-center hover:bg-orange-400 py-1 transition-all duration-300 text-2xl px-2">
-               <Link to={'/steak'} className='flex items-center gap-3 pr-1'>
+               <Link onClick={()=>dispatch(setIsClose())} to={'/steak'} className='flex items-center  pr-1'>
                <GiSteak className=""/>
-                <h2 className="px-2 font-semibold w-30 text-base">Steak</h2>
+                <h2 className="px-2  w-30 text-base">Steak</h2>
                </Link>
                </div>
                <div className="w-full flex justify-center hover:bg-orange-400 py-1 transition-all duration-300 text-2xl px-2">
-               <Link to={'/cake'} className='flex items-center gap-3 pr-1'>
+               <Link onClick={()=>dispatch(setIsClose())} to={'/cake'} className='flex items-center  pr-1'>
                <BsCake2 className=""/>
-                  <h2 className="px-2 font-semibold w-30 text-base">Cake</h2>
+                  <h2 className="px-2  w-30 text-base">Cake</h2>
                </Link>
 
                </div>
                <div className="w-full flex justify-center items-center gap-3 hover:bg-orange-400 py-1 transition-all duration-300 text-2xl px-2">
-               <LiaUserCircleSolid/>
-                 <h2>My Account</h2>
+                 <div onClick={()=>dispatch(setIsClose())} className="flex  gap-1 pl-1">
+                 <LiaUserCircleSolid/>
+                 <h2 className='text-base'>My Account</h2>
+                 </div>
+              
                </div>
-               <div className="w-full flex justify-center items-center gap-3 pr-9 hover:bg-orange-400 py-1 transition-all duration-300 text-2xl px-2">
+               <div className="w-full flex justify-center items-center gap-3 pr-2 hover:bg-orange-400 py-1 transition-all duration-300 text-2xl px-2">
+                 <div onClick={()=>dispatch(setIsClose())} className="flex items-center gap-1">
+
                <CiDeliveryTruck className='text-3xl'/>
-                  <h2>Delivery</h2>
+                  <h2 className='text-base'>Delivery</h2>
+               </div>
+                 </div>
+               <div className="w-full flex justify-center items-center gap-1 hover:bg-orange-400 py-1 transition-all duration-300 text-2xl px-2">
+                <div onClick={()=>dispatch(setIsClose())} className="flex items-center pl-2 gap-1">
+
+               <GrFavorite/>
+                <h2 className='text-base'>My Favorite</h2>
+                </div>
                </div>
                <div className="w-full flex justify-center items-center gap-3 hover:bg-orange-400 py-1 transition-all duration-300 text-2xl px-2">
-               <GrFavorite/>
-                <h2>My Favorite</h2>
-               </div>
-               <div className="w-full flex justify-center items-center gap-3 pr-7 hover:bg-orange-400 py-1 transition-all duration-300 text-2xl px-2">
+                  <div onClick={()=>dispatch(setIsClose())} className="flex items-center gap-1">
+
                <RiWallet3Line/>
-                 <h2>My Wallet</h2>
+                 <h2 className='text-base'>My Wallet</h2>
+                  </div>
                </div>
-               <div className="w-full flex justify-center items-center gap-3 pr-20 hover:bg-orange-400 py-1 transition-all duration-300 text-2xl px-2">
+               <div className="w-full flex justify-center items-center gap-3 hover:bg-orange-400 py-1 transition-all duration-300 text-2xl px-2">
+                 <div onClick={()=>dispatch(setIsClose())} className="flex items-center pr-10">
+
                <IoIosHelpCircleOutline className='text-3xl'/>
-                <h2>help</h2>
+                <h2 className='text-base'>Help</h2>
+                 </div>
                </div>
              </div>
         </div>
