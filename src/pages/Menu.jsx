@@ -65,7 +65,7 @@ export default function Menu() {
               return item
              }
           }).map((item) => (
-            <div key={item.id} className="shadow-lg shadow-gray-300 w-[400px] lg:w-[300px] rounded-lg overflow-hidden">
+            <div key={item.id} className="shadow-lg shadow-gray-300 w-[350px] lg:w-[300px] rounded-lg overflow-hidden">
               <Card item={item}/>
             </div>
           ))}

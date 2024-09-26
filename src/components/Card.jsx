@@ -9,7 +9,7 @@ export default function Card({item}) {
   return (
     <div>
         <div className="flex flex-col">
-            <img src={item.img} alt={item.name} className='w-full h-[200px] object-cover'/>
+            <img src={item.img} alt={item.name} className='w-full h-[200px] object-cover hover:scale-110 transition-all duration-300'/>
             <div className="flex flex-col gap-2 p-2">
                 <h5 className='font-semibold'>{item.name}</h5>
                   <span className='font-medium'>{item.price}</span>
