@@ -1,3 +1,14 @@
+ import steak1 from '../assets/beef steak1.jpg'
+  import steak2 from '../assets/beef steak2.jpg'
+ import cake1 from '../assets/cake2.jpg'
+ import steak5 from '../assets/beef steak5.jpg'
+  import burger1 from '../assets/burger1.jpg'
+  // import pizza2 from '../assets/pizza2.jpg'
+  import pizza3 from '../assets/pizza6.jpg'
+ import sandwich1 from '../assets/sandwich1.jpg'
+ 
+  import burger3 from '../assets/burger3.jpg'
+
 export const topPicks = [
   {
     id: 1,
@@ -52,7 +63,7 @@ export const topPicks = [
     id: 8,
     name: "chicken burger",
     price: "$300",
-    category: "chicken",
+    category: "burger",
     img: "https://res.cloudinary.com/ehizeex-shop/image/upload/v1672332323/NetflixApp/chiken_burger_ncsmeh.webp",
   },
   {
@@ -73,40 +84,74 @@ export const topPicks = [
     id: 11,
     name: "chinese pizza",
     price: "$900",
+    category: "pizza",
     img: "https://res.cloudinary.com/ehizeex-shop/image/upload/v1672324456/NetflixApp/chinese_pizza_kgnbo1.jpg",
   },
   {
     id: 13,
     name: "chiken_shawarma",
     category: "chicken",
-    img:
-      "https://res.cloudinary.com/ehizeex-shop/image/upload/v1672323737/NetflixApp/chiken_shawarma_c0ysna.jpg",
+    img: "https://res.cloudinary.com/ehizeex-shop/image/upload/v1672323737/NetflixApp/chiken_shawarma_c0ysna.jpg",
     price: "$100",
   },
   {
     id: 14,
     name: "Wings",
     category: "chicken",
-    img:
-      "https://res.cloudinary.com/ehizeex-shop/image/upload/v1672322922/NetflixApp/chicken-wings_lv3zc9.jpg",
+    img: "https://res.cloudinary.com/ehizeex-shop/image/upload/v1672322922/NetflixApp/chicken-wings_lv3zc9.jpg",
     price: "$100",
   },
   {
     id: 15,
     name: "Roasted Chicken",
     category: "chicken",
-    img:
-      "https://res.cloudinary.com/ehizeex-shop/image/upload/v1672322922/NetflixApp/roast-chicken_nrc6r8.jpg",
+    img: "https://res.cloudinary.com/ehizeex-shop/image/upload/v1672322922/NetflixApp/roast-chicken_nrc6r8.jpg",
     price: "$300",
   },
   {
     id: 16,
     name: "Chicken Tenders",
     category: "chicken",
-    img:
-      "https://res.cloudinary.com/ehizeex-shop/image/upload/v1672322923/NetflixApp/chicken_tenders_quel6y.jpg",
+    img: "https://res.cloudinary.com/ehizeex-shop/image/upload/v1672322923/NetflixApp/chicken_tenders_quel6y.jpg",
     price: "$100",
   },
+    {id: 17,
+    name: "steak",
+    category: "steak",
+    img: steak5,
+    price: "$150",
+  },
+    {id: 18,
+    name: "steak",
+    category: "steak",
+    img: steak1,
+    price: "$200",
+  },
+    {id: 20,
+    name: "burger",
+    category: "burger",
+    img: burger3,
+    price: "$300",
+  },
+    {id: 21,
+    name: "burger",
+    category: "burger",
+    img: burger1,
+    price: "$200",
+  },
+    {id: 22,
+    name: "cake",
+    category: "cake",
+    img: cake1,
+    price: "$200",
+  },
+    {id: 23,
+    name: "sandwich",
+    category: "sandwich",
+    img: sandwich1,
+    price: "$200",
+  },
+ 
 ];
 
 export const meal = [
