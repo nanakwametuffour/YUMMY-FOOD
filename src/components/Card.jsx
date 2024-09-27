@@ -2,6 +2,7 @@ import React from 'react'
 import { IoBagOutline } from 'react-icons/io5';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../redux/cart/cartSlice';
+import { Link } from 'react-router-dom';
  
 export default function Card({item}) {
     const dispatch = useDispatch()
@@ -16,7 +17,9 @@ export default function Card({item}) {
             </div>
              <div className="w-full p-2 text-2xl">
                 <button  className='bg-orange-400 gap-2 flex w-full justify-center items-center py-2 rounded-lg active:scale-110 transition-all duration-300'>
+                    <Link to={'/ordering'}>
                     <h6>Order now</h6>
+                    </Link>
                     <IoBagOutline/>
 
                 </button>
